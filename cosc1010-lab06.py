@@ -61,6 +61,7 @@ lrslowamkcwolbcgfkfciegdwqskuazxnycqkkggzsowcmafay
 ibmkdwkqmdkjesqnjiqpijixbwjhenmsrrlpcseliiajlvcaac
 zkdenxczyooloczcaahnkehbwimvieedpdlqfafbqvxvfmvabd
 """
+
 random_string = random_string.replace("\n","") #remove all newline characters
 print(len(random_string)) # Print out the size for reference 
 
@@ -82,19 +83,43 @@ print(len(random_string)) # Print out the size for reference
 
 #Load all the elements into a dictionary
 #Will need to first declare a dictionary 
+dictionary  = {}
+for letter in random_string:
+    if letter in dictionary:
+        dictionary [letter] +=1
+    else:
+        dictionary[letter]=1
+# # Output: each letter and its corresponding occurrence in alphabetical order
 
-# Output: each letter and its corresponding occurrence in alphabetical order
+for letter in sorted(dictionary):
+    print(f"{letter}:{dictionary[letter]}")
 
-print("*"*75)
-# Output which letter occurred the most 
+# sorted_dictionary = sorted(dictionary.items())
+# for letter, count in sorted_dictionary:
+#     print(f"{letter}:{dictionary}")
+# # Output which letter occurred the most 
+# sorted_letter = sorted_dictionary.values()
+# most_occurred = ""
+# least_occurred =""
+# for i in dictionary:
+#     if dictionary[i]== sorted_letter[-1]:
+#         most_occurred = i
 
-most_occurred = ""
-least_occurred = ""
-
-print(f"The letter that occurred the most is {most_occurred}")
 print("*"*75)
 # Output which letter occurred the least 
+sorted_letter = sorted(dictionary.values())
+for i in dictionary:
+    if dictionary[i] == sorted_letter[-1]:
+        most_occurred = i
+for i in dictionary:
+    if dictionary[i] == sorted_letter[0]:
+        least_occurred = i   
 print(f"The letter that occurred the most is {least_occurred}")
+print(f"The letter that occurred the least is {most_occurred}")
 print("*"*75)
 
-# Output what the percentage of the string each character is, again in alphabetical
+# # Output what the percentage of the string each character is, again in alphabetical
+total_letter_count = len(random_string)
+for count in dictionary:
+     percentage = (dictionary[count]/total_letter_count) * 100
+     print(f"{letter}:{percentage}")
