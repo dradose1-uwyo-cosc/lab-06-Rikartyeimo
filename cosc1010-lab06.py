@@ -1,125 +1,60 @@
-# Your Name Here
+# Your Name Here :Rikart Yeimo
 # UWYO COSC 1010
 # Submission Date
-# Lab 06
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab Section: Homework 3
+# Sources, people worked with, help given to: Brian Montiel
 # your
 # comments
 # here
-
-
-random_string = """
-jppamiqxegokaizvkyawwurhewtcxohryzptznyuedhhmawpic
-pkzwuiorngdfcsgqnlyifzyaivehpiyszykqprbcsobygzhadd
-yfddbulxmcnyvqhesmnybyuhxjqqmhdxwhcselasiayqhctnlw
-hakethjahqnvjdowhlyzosemxkbenestxgvgncmffkcxldcmkl
-itclmqdhrbdgzwtvdxwedcknbyaecvttjphtxubvhwvcvjqayy
-almxuxjbcmznnzekptfzbldsjwpvringlmalwufvlppeiendur
-dyophftqjkghhncwxoksqaqnpueudpygiytqgpcgjqsjbtbpzi
-vaeczmyicnednjjoxkpnjmpfbgyjnbfjlweqqppodfxfzzwkuf
-rldgryyhceuikimoavosuzuozthmatcgxcmkxnaxmsevkcumby
-spiajlbycvrluxdkfavxidzalxuixqkxiybhfuqhcvmrhzbzse
-idjwgwdwgfkyreozkyoxdvhixfejxjfgkkgobescboyfshiovu
-fxdyvfsnmjzsphgmtldlaoehofcspzujghcdcxzggvunpbtglr
-topplmkviuewwpoaplmbpgejmymxbyzzwbnujrlysszmxkjerb
-zpiewqvgopvhmmcgwcyvxvwhdvfgsrybcozhdtwujhdbxzznkc
-ergcqbetpgwrejuluqfxchlihunzbcdwboysjqenjxzbgqbycx
-dybxpyztjyxpkqfvxullzkedpkjjobhymfinpvprxejktyrpai
-ehjgwahpquzcmvclatdfcmattavoehnhnzveoxwnmnptxbvxto
-gpcobgzdhsjevhcohkltftmrqkosknkxeylhqxkkctbnusijgr
-uvecpbqmylqdaohkfaqbgeokyyipumjuaaayikdzyxfrpaieyo
-uxiosjwioebsjtslblfurgcodtyaggzovzfnnyjngawiwbbtqi
-kqqhnkwheolpqzasmsmbxqkeiqvogquobphewznfsnlkkizhca
-cbiyvxpmjxywqvzqtshfvnfbusphggexfqzepsrduvtovdsknl
-ztyuwugprkhbmktfvrenbmqgdjwnkeugtojrpqfmjhtrlcqcpq
-pwsguedzgvktpwbqkhkueymjtxbvzmdfjopzkygujrjdtogssg
-cxczryuqhhgjlpultkoffescpzyjrfqqabnhkfdnhkylpjamxk
-uxidjkqdrkxqjqjtflebvwhcvqjciykzhrvppvxhvpedgznwty
-kujglixooczrhxziasjxddfcghzlwrqcyiilpruhdfvitewxzg
-dzcvmvnoskchscgoqfsojfvahlwkrslzeirlblseplcmpmbmum
-ibrdamvqfstydtjopdkdcbnnmpifxckozyxzluhcqbqtpismog
-ulufaajxvuizvdzioxfvypxovptkibcrjvfidomejknuggfrtp
-kptwffersvqjknemkejsgspckwqisdcliuezhbeqpwgrjcqajl
-huobykkbujmyuuinbwdklqfhvakyozzsxghfyownjjwqtkxgkf
-ipdbjzxfogozstfsektujsvklrvecditiectuvtfibohmxxzna
-cpqzeoburtquuizhypugnkvuwbdxnraareqkofhfjobrpcsuxq
-nbafxlkuafbfsiuyrxdusqyasqyrwhdjrukgxdackumvairlgn
-fjhenwbrdghbevgqbybpwncclolgqyuhallbqtzdywbvlzwtil
-jctmsxjortnxvlbhuhkblppewjhqjzxrwgftlturxjuwfoaqpp
-sgfnxwxolkbrpdmpniitoljzaxabgtnelrmryetxqypwrjdyjc
-zipwbdpbazxpesmrcfuikeamtlsrgxrhzfytecenyydeemrhxj
-gmdruhillntvpadzbroyygydpmonwuakruvxbdrqhtrjvoqsin
-gjbarzvuqplmsmbwtqfghteoknbxmaokwlqqfoblmzsxczjzfj
-mzmawtarjdtgongqqufhhdjwcinhlxcsgoltjycxrkloqozxoi
-crlfmgflzzxgiiliqlksxyaydsohhahzxtsufzppftvgbpsdlx
-ertfmbothijzrrdvfrnsohnwulcxvcvxngvmznhazxrgdsugij
-fracotpirvqemsiuualpkpvtmtgchmowkmvoolrjfblrtwkmtr
-xhawucytgwlahddkhxxfublukkdldpovqokntydhzzrxiisdwu
-ujrkoewqoflyebogbwgdhriwkkoiofwtjlhxxtmzkklzbcmxhv
-lrslowamkcwolbcgfkfciegdwqskuazxnycqkkggzsowcmafay
-ibmkdwkqmdkjesqnjiqpijixbwjhenmsrrlpcseliiajlvcaac
-zkdenxczyooloczcaahnkehbwimvieedpdlqfafbqvxvfmvabd
-"""
-
-random_string = random_string.replace("\n","") #remove all newline characters
-print(len(random_string)) # Print out the size for reference 
-
-# Above is a string with 2500 characters.
-# Create a program that goes through and counts the occurrence of each character, excluding \n using a  dictionary
-# Output each letter and its corresponding occurrence in alphabetical order
-# Output which letter occurred the most 
-# Output which letter occurred the least 
-# Output what the percentage of the string each character is, again in alphabetical
-
-#Tips and trick:
-# You can iterate through strings like you would a list
-# All characters are lowercase 
-# Each letter will be PAIRED with its corresponding value 
-# That is to say, this is a great use of dictionaries
-    # You will  need to add the letter to the dictionary on first occurrence 
-    # Then increment its corresponding count 
-
-
-#Load all the elements into a dictionary
-#Will need to first declare a dictionary 
-dictionary  = {}
-for letter in random_string:
-    if letter in dictionary:
-        dictionary [letter] +=1
+def leap_year (year):
+    if year % 4 == 0 :
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
     else:
-        dictionary[letter]=1
-# # Output: each letter and its corresponding occurrence in alphabetical order
+        return False
+def january_first_day(year):
+    y = year - 1
+    day = (36 + y + (y // 4) - (y // 100) + (y // 400)) % 7
+    return  day
+def valid_date(month, day, year):
+    if month < 1 or month > 12:
+        return False
+    if day < 1:
+        return False
+    if month in [4, 6, 9, 11] and day > 30:
+        return False
+    if month in [1, 3, 5, 7, 8, 10, 12] and day > 31:
+        return False
+    if month == 2:
+        if leap_year(year) and day > 29:
+            return False
+        elif not leap_year(year) and day > 28:
+            return False
+    return True
 
-for letter in sorted(dictionary):
-    print(f"{letter}:{dictionary[letter]}")
+def day_of_week(month, day, year):
+    if not day_of_week(month, day, year):
+        return "Invalid Date"
+    days_in_month = [31, 28 + leap_year(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    day_of_week = ["Sunday", "Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"] 
 
-# sorted_dictionary = sorted(dictionary.items())
-# for letter, count in sorted_dictionary:
-#     print(f"{letter}:{dictionary}")
-# # Output which letter occurred the most 
-# sorted_letter = sorted_dictionary.values()
-# most_occurred = ""
-# least_occurred =""
-# for i in dictionary:
-#     if dictionary[i]== sorted_letter[-1]:
-#         most_occurred = i
+    january_first = january_first_day(year)
+    total_days = sum(days_in_month[:month - 1]) + day - 1
+    day_of_week = (january_first + total_days) % 7
+    return day_of_week[day_of_week]   
+def main():
+    input_date = input ("Enter date (MM/DD/YYY):")
+    try:
+        month, day, year = map(int, input_date.split('/'))
+        result = day_of_week(month, day, year)
+        print(f"{input_date} {result}")
+    except ValueError:
+        print("Invalid Date")
+if __name__ == "__main__":
+    main()
 
-print("*"*75)
-# Output which letter occurred the least 
-sorted_letter = sorted(dictionary.values())
-for i in dictionary:
-    if dictionary[i] == sorted_letter[-1]:
-        most_occurred = i
-for i in dictionary:
-    if dictionary[i] == sorted_letter[0]:
-        least_occurred = i   
-print(f"The letter that occurred the most is {least_occurred}")
-print(f"The letter that occurred the least is {most_occurred}")
-print("*"*75)
-
-# # Output what the percentage of the string each character is, again in alphabetical
-total_letter_count = len(random_string)
-for count in dictionary:
-     percentage = (dictionary[count]/total_letter_count) * 100
-     print(f"{letter}:{percentage}")
