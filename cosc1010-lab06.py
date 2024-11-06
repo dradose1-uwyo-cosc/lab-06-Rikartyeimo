@@ -1,6 +1,6 @@
-# Your Name Here :Rikart Yeimo
+# Your Name Here : Rikart Yeimo
 # UWYO COSC 1010
-# Submission Date
+# Submission Date: 11/5/2024
 # Lab Section: Homework 3
 # Sources, people worked with, help given to: Brian Montiel
 # your
